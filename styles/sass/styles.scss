@@ -1,11 +1,31 @@
-
-
-header {
-
-    h1 {
-        font-size: 20px;
-    }
-
+html {
+    font-size: 62.5%;
 }
 
-@import "setup"
+* {
+    border: solid 1px slateblue;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+button {
+    background-color: #0E902D;
+    padding: 10px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+@import "setup";
+@import "index";

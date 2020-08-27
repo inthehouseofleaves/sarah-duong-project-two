@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href=".">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
     <!-- HEADER -->
 
-    <header>
+    <header class="indexHeader">
 
-        <!-- Use background image here -->
+        <span class="oneLine">
+            <span class="logo">Planted</span>
 
-        <div class="logo">Planted</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </span>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <h1>Planted invitation</h1>
+        <h1 class="plantedH1">Planted invitation</h1>
 
         <div class="headerBox">
             <img src="./assets/header-box.jpg" alt="">
@@ -39,37 +41,47 @@
 
     <main>
 
+    <div class="wrapper">
+
         <!-- WHAT IS PLANTED? -->
 
-        <h2>What is Planted?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium voluptates sapiente odit a ut ullam nesciunt iste amet enim qui incidunt pariatur dolor error, unde facere laborum ad officiis omnis quasi vitae id dicta at. Quibusdam voluptas corrupti consequuntur dignissimos quia ab minima quam numquam. Rem id totam odio!</p>
-        <button>Find out more</button>
+        <div class="whatIsPlanted">
 
-        <!-- CHECKERED TEXT/IMAGES: TOP -->
-
-        <div class="checkeredTop">
-
-            <div class="leftFlowers">
-                <img src="./assets/left-flowers.jpg" alt="">
-            </div>
-
-            <h3>Upcoming workshops</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum, commodi nulla corporis eaque eius magni nisi
-                quam obcaecati perspiciatis?</p>
-            <button>Read more</button>
+            <h2>What is Planted?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laudantium voluptates sapiente odit a ut ullam nesciunt iste amet enim qui incidunt pariatur dolor error, unde facere laborum ad officiis omnis quasi vitae id dicta at. Quibusdam voluptas corrupti consequuntur dignissimos quia ab minima quam numquam. Rem id totam odio!</p>
+            <button>Find out more</button>
 
         </div>
 
-        <!-- CHECKERED TEXT/IMAGES: BOTTOM -->
+        <!-- CHECKERED TEXT/IMAGES: TOP -->
 
-        <div class="checkeredBottom">
+        <div class="whiteBox">
 
-            <h3>Unique plants to discover</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi adipisci nihil voluptate recusandae illo quia quaerat tempore, quo provident architecto?</p>
-            <button>Read more</button>
+            <div class="checkeredTop">
 
-            <div class="rightFlowers">
-                <img src="./assets/right-flowers.jpg" alt="">
+                <div class="leftFlowers">
+                    <img src="./assets/left-flowers.jpg" alt="">
+                </div>
+
+                <h3>Upcoming workshops</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum, commodi nulla corporis eaque eius magni nisi
+                    quam obcaecati perspiciatis?</p>
+                <button>Read more</button>
+
+            </div>
+
+            <!-- CHECKERED TEXT/IMAGES: BOTTOM -->
+
+            <div class="checkeredBottom">
+
+                <h3>Unique plants to discover</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi adipisci nihil voluptate recusandae illo quia quaerat tempore, quo provident architecto?</p>
+                <button class="readMore">Read more</button>
+
+                <div class="rightFlowers">
+                    <img src="./assets/right-flowers.jpg" alt="">
+                </div>
+
             </div>
 
         </div>
@@ -92,6 +104,8 @@
 
         </div>
 
+    </div>
+
         <!-- WINDOWSILL FLOWERS BANNER -->
 
         <div class="windowsillFlowers">
@@ -108,10 +122,14 @@
 
         <!-- GALLERY IMAGES -->
 
+        <div class="wrapper">
+
         <div class="gallery">
             <img src="./assets/gallery-image-1.jpg" alt="">
             <img src="./assets/gallery-image-2.jpg" alt="">
             <img src="./assets/gallery-image-3.jpg" alt="">
+        </div>
+
         </div>
 
     </main>
