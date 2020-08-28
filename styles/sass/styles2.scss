@@ -1,95 +1,66 @@
-@import "setup";
+
 @import "blog";
+@import "setup";
+@import "universal";
 
-* {
-    font-family: 'Josefin Sans', sans-serif;
-}
 
-body {
-    overflow-x: hidden;
-}
 
-button {
-    background-color: #0E9020;
-    color: white;
-    font-size: 1.7rem;
-    padding: 7px 10px;
-}
+// MAIN PAGE (INDEX)
 
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-p {
-    font-size: 1.7rem;
-}
-
-.wrapper {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1080px;
-}
-
-// font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;
+// HEADER SECTION
 
 header {
     height: 570px;
 }
 
-    .topThing {
-        display: flex;
-        width: 100%;
-        margin-left: 100px;
-        padding-top: 10px;
+    // HEADER
+
+    .indexHeader {
+        background-image: url(../assets/home-image-1.jpg);
     }
 
-.logo {
-    color: white;
-    font-size: 2.5rem;
-}
-
-.indexHeader {
-    background-image: url(../assets/home-image-1.jpg);
-}
-
-    nav {
-        display: flex;
-        text-transform: uppercase;
-        width: 70%;
-        align-items: center;
-    }
-
-    ul {
-            list-style-type: none;
-            margin: 0;
+        .indexNav {
+            display: flex;
             width: 100%;
+            margin-left: 100px;
+            padding-top: 10px;
         }
 
-    li {
-        display: inline;
-    }
+            .logo {
+                color: white;
+                font-size: 2.5rem;
+            }    
 
-    a {
-        text-decoration: none;
-        color: white;
-        margin: 0 20px;
-        font-size: 1.5rem;
-        
-    }
+            nav {
+                display: flex;
+                text-transform: uppercase;
+                width: 70%;
+                align-items: center;
+            }
 
-    a:hover {
-        color: #F8E71C;
-    }
+                ul {
+                        list-style-type: none;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    li {
+                        display: inline;
+                    }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            margin: 0 20px;
+                            font-size: 1.5rem;
+                            
+                        }
+
+                        a:hover {
+                            color: #F8E71C;
+                        }
+
+    // H1
 
     h1 {
         font-size: 9rem;
@@ -102,16 +73,15 @@ header {
             margin-top: 200px;
         }
 
-        .white {
-            color: white;
-        }
+            .plantedText {
+                color: white;
+            }
 
-        .yellow {
-            color: yellow;
-        }
+            .invitationText {
+                color: yellow;
+            }
 
-
-    // HEADER BOX
+    // HEADER IMAGE BOX
 
     .headerBox {
 
@@ -126,137 +96,141 @@ header {
         }
     }
 
+
 // MAIN
 
-// WHAT IS PLANTED
+    // WHAT IS PLANTED
 
-.whatIsPlanted {
-    height: 570px;
-    text-align: center;
-    padding-top: 175px;
-    background-color: #F0EFEF;
-}
-
-    .whatIsPlanted p {
-        font-size: 2rem;
-        padding: 0 100px;
-    }
-
-// CHECKERED TOP
-
-.whiteBox {
-    height: 600px;
-    background-color: white;
-}
-
-.workshop, .leftFlowers, .rightFlowers, .discover {
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 300px;
-}
-
-.workshop {
-    padding-left: 85px;
-    padding-top: 80px;
-}
-
-.discover {
-    padding-right: 85px;
-    text-align: right;
-}
-
-.leftFlowers img, .rightFlowers img {
-    position: relative;
-    width: 450px;
-    box-shadow: #F8E71C 15px 15px;
-}
-
-.leftFlowers img {
-    top: -40px;
-}
-
-.rightFlowers img {
-    float: right;
-    top: 40px;
-    left: -15px;
-}
-
-// GREENHOUSES ETC.
-
-.greenhousesEtc {
-
-    height: 450px;
-    background-color: #F0EFEF;
-    display: flex;
-    padding-top: 100px;
-
-    i{
-        font-size: 2rem;
-        background-color: yellow;
-        border-radius: 50%;
-        padding: 10px;
-        margin-right: 15px;
-    }
-
-    p {
-        margin-left: 55px;
-    }
-}
-
-// BANNER
-
-.windowsillFlowers {
-    display: flex;
-    height: 300px;
-}
-
-// PLANTED FOUNDER
-
-.founder {
-    height: 400px;
-    display: flex;
-    padding: 70px 0;
-    background-color: #F0EFEF;
-}
-
-    .founder img {
-        width: 200px;
-        margin-right: 50px;
-        box-shadow: #F8E71C 15px 15px;
-    }
-
-    .founder p {
-        width: 100%;
-    }
-
-// GALLERY
-
-.gallery {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
-    background-color: white;
-}
-
-    .gallery img {
-        padding-right: 20px;
-    }
-
-    .gallery img:last-child {
-        padding-right: 0;
-    }
-
-// FOOTER FOOTER
-
-    footer {
-        background-color: black;
+    .whatIsPlanted {
+        height: 570px;
         text-align: center;
-        color: white;
-        font-size: 1.5rem;
+        padding-top: 175px;
+        background-color: #F0EFEF;
     }
 
-        footer p {
-            margin: 0;
-            padding: 10px;
+        .whatIsPlanted p {
+            font-size: 2rem;
+            padding: 0 100px;
         }
+
+    // CHECKERED BOX
+
+    .checkeredBox {
+        height: 600px;
+        background-color: white;
+    }
+
+        .discover, .leftImage, .rightImage, .workshop {
+                position: relative;
+                width: 50%;
+                float: left;
+                height: 300px;
+            }
+
+            .leftImage img, .rightImage img {
+                position: relative;
+                width: 450px;
+                box-shadow: #F8E71C 15px 15px;
+            }
+
+        // CHECKERED TOP
+
+        .leftImage img {
+                top: -40px;
+            }
+
+        .workshop {
+            padding-left: 85px;
+            padding-top: 80px;
+        }
+
+        // CHECKERED BOTTOM
+
+        .discover {
+            padding-right: 85px;
+            text-align: right;
+        }
+
+        .rightImage img {
+            float: right;
+            top: 40px;
+            left: -15px;
+        }
+
+    // GREENHOUSES ETC.
+
+    .greenhousesEtc {
+        height: 450px;
+        background-color: #F0EFEF;
+        display: flex;
+        padding-top: 100px;
+    }
+
+        .greenhousesEtc i{
+            font-size: 2rem;
+            background-color: yellow;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 15px;
+        }
+
+        .greenhousesEtc p {
+            margin-left: 55px;
+        }
+
+    // BANNER
+
+    .banner {
+        display: flex;
+        height: 300px;
+    }
+
+    // PLANTED FOUNDER
+
+    .founder {
+        height: 400px;
+        display: flex;
+        padding: 70px 0;
+        background-color: #F0EFEF;
+    }
+
+        .founder img {
+            width: 200px;
+            margin-right: 50px;
+            box-shadow: #F8E71C 15px 15px;
+        }
+
+        .founder p {
+            width: 100%;
+        }
+
+    // GALLERY
+
+    .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+        background-color: white;
+    }
+
+        .gallery img {
+            padding-right: 20px;
+        }
+
+        .gallery img:last-child {
+            padding-right: 0;
+        }
+
+// FOOTER
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+    footer p {
+        margin: 0;
+        padding: 10px;
+    }

@@ -1,3 +1,108 @@
+.comment1 a, .comment2 a, .blogText a, .aboutSidebar a {
+  color: #074115;
+  margin-left: 0;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-header-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.blogHeader h1 {
+  color: #F8E71C;
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 300px;
+  background-color: transparent;
+}
+
+.aboutSidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  float: left;
+  margin-top: 50px;
+  position: relative;
+  left: 50px;
+  background-color: white;
+  padding: 20px;
+}
+
+.sidebarImage {
+  background-image: url(../assets/side-bar-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 120%;
+  position: relative;
+  right: 25%;
+}
+
+.aboutSidebar p {
+  margin: 0;
+}
+
+.aboutSidebar li {
+  display: list-item;
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  list-style-type: disc;
+  margin-left: -20px;
+}
+
+.blogText, .comments, .blogImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  float: right;
+  width: 60%;
+}
+
+.blogText {
+  border: #F8E71C 4px solid;
+  position: relative;
+  bottom: 250px;
+  left: 10px;
+  padding: 25px;
+}
+
+.blogImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 500px;
+  -webkit-box-shadow: #F8E71C -15px 15px;
+          box-shadow: #F8E71C -15px 15px;
+  overflow: hidden;
+  position: relative;
+  left: 25px;
+  top: -250px;
+}
+
+.comments {
+  bottom: 250px;
+  right: 0;
+  position: relative;
+  width: 55%;
+}
+
+.comments h3 {
+  margin: 25px 0;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,95 +340,8 @@ html {
   overflow: hidden;
 }
 
-* {
-  border: red 1px solid;
-}
-
 html {
   background-color: #F0EFED;
-}
-
-.italics {
-  font-style: italic;
-}
-
-.man a, .woman a, .blogArea a, .aboutSidebar a {
-  color: #074115;
-  margin-left: 0;
-}
-
-.blogHeader {
-  background-image: url(../assets/blog-header-1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.blogHeader h1 {
-  color: yellow;
-  text-align: left;
-  margin-left: 60px;
-  margin-top: 300px;
-  background-color: transparent;
-}
-
-.aboutSidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%;
-  float: left;
-  margin-top: 50px;
-  position: relative;
-  left: 50px;
-  background-color: white;
-}
-
-.aboutSidebar img {
-  height: 200px;
-  position: static;
-}
-
-.blogArea, .comments, .blogImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  float: right;
-  width: 60%;
-}
-
-.blogArea {
-  border: yellow 4px solid;
-  position: relative;
-  bottom: 250px;
-  left: 10px;
-}
-
-.blogImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%;
-  height: 500px;
-  -webkit-box-shadow: yellow -15px 15px;
-          box-shadow: yellow -15px 15px;
-  overflow: hidden;
-  position: relative;
-  left: 25px;
-  top: -250px;
-}
-
-.comments {
-  bottom: 250px;
-  right: 0;
-  position: relative;
 }
 
 * {
@@ -350,11 +368,21 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 2rem;
+}
+
 html {
   font-size: 62.5%;
 }
 
 p {
+  font-size: 1.7rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.emphasize {
+  font-style: italic;
   font-size: 1.7rem;
 }
 
@@ -368,7 +396,11 @@ header {
   height: 570px;
 }
 
-.topThing {
+.indexHeader {
+  background-image: url(../assets/home-image-1.jpg);
+}
+
+.indexNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,10 +412,6 @@ header {
 .logo {
   color: white;
   font-size: 2.5rem;
-}
-
-.indexHeader {
-  background-image: url(../assets/home-image-1.jpg);
 }
 
 nav {
@@ -429,11 +457,11 @@ h1 {
   margin-top: 200px;
 }
 
-.white {
+.plantedText {
   color: white;
 }
 
-.yellow {
+.invitationText {
   color: yellow;
 }
 
@@ -459,16 +487,27 @@ h1 {
   padding: 0 100px;
 }
 
-.whiteBox {
+.checkeredBox {
   height: 600px;
   background-color: white;
 }
 
-.workshop, .leftFlowers, .rightFlowers, .discover {
+.discover, .leftImage, .rightImage, .workshop {
   position: relative;
   width: 50%;
   float: left;
   height: 300px;
+}
+
+.leftImage img, .rightImage img {
+  position: relative;
+  width: 450px;
+  -webkit-box-shadow: #F8E71C 15px 15px;
+          box-shadow: #F8E71C 15px 15px;
+}
+
+.leftImage img {
+  top: -40px;
 }
 
 .workshop {
@@ -481,18 +520,7 @@ h1 {
   text-align: right;
 }
 
-.leftFlowers img, .rightFlowers img {
-  position: relative;
-  width: 450px;
-  -webkit-box-shadow: #F8E71C 15px 15px;
-          box-shadow: #F8E71C 15px 15px;
-}
-
-.leftFlowers img {
-  top: -40px;
-}
-
-.rightFlowers img {
+.rightImage img {
   float: right;
   top: 40px;
   left: -15px;
@@ -519,7 +547,7 @@ h1 {
   margin-left: 55px;
 }
 
-.windowsillFlowers {
+.banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
