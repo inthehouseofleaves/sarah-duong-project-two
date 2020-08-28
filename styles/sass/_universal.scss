@@ -17,6 +17,23 @@ button {
     padding: 7px 10px;
 }
 
+.copyright {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+    .copyright p {
+        margin: 0;
+        padding: 10px;
+    }
+
+.emphasize {
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
 h2 {
     font-size: 3rem;
 }
@@ -34,14 +51,14 @@ html {
     font-size: 62.5%;
 }
 
+.navigationBar {
+    display: flex;
+    background-color: black;
+}
+
 p {
     font-size: 1.7rem;
     font-family: 'Roboto', sans-serif;
-}
-
-.emphasize {
-    font-style: italic;
-    font-size: 1.7rem;
 }
 
 .wrapper {
