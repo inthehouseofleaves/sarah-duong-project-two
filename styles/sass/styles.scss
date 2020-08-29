@@ -56,24 +56,26 @@ header {
 
     // H1
 
-    h1 {
-        font-size: 9rem;
-        text-align: center;
-        z-index: 1;
-        position: relative;
+    * {
+        border: red solid 1px;
     }
 
-        .plantedH1 {
-            margin-top: 200px;
+    .indexH1 {
+        text-align: left;
+        border: 2px blue solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+        .indexH1 h1 {
+            margin-top: 0;
         }
 
-            .h1 {
-                color: white;
-            }
-
-            .h1Highlight {
-                color: yellow;
-            }
+        .neutral {
+            color: white;
+        }
 
     // HEADER IMAGE BOX
 

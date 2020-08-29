@@ -371,10 +371,6 @@ html {
   margin-top: 20px;
 }
 
-* {
-  border: 1px red solid;
-}
-
 .contactHeader {
   background-image: url(../assets/contact-header-1.jpg);
 }
@@ -477,6 +473,8 @@ h1 {
   margin-top: 300px;
   background-color: transparent;
   width: 30%;
+  font-size: 9rem;
+  z-index: 1;
 }
 
 h2 {
@@ -568,23 +566,31 @@ a:hover {
   color: #F8E71C;
 }
 
-h1 {
-  font-size: 9rem;
-  text-align: center;
-  z-index: 1;
-  position: relative;
+* {
+  border: red solid 1px;
 }
 
-.plantedH1 {
-  margin-top: 200px;
+.indexH1 {
+  text-align: left;
+  border: 2px blue solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-.h1 {
+.indexH1 h1 {
+  margin-top: 0;
+}
+
+.neutral {
   color: white;
-}
-
-.h1Highlight {
-  color: yellow;
 }
 
 .headerBox img {
