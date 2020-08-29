@@ -235,27 +235,18 @@ html {
   overflow: hidden;
 }
 
-* {
-  border: red 1px solid;
-}
-
 .comment1 a, .comment2 a, .blogText a, .aboutSidebar a {
   color: #074115;
   margin-left: 0;
 }
 
-.blogHeader {
-  background-image: url(../assets/blog-header-1.jpg);
+.blogHeader, .contactHeader {
   background-position: center;
   background-size: cover;
 }
 
-.blogHeader h1 {
-  color: #F8E71C;
-  text-align: left;
-  margin-left: 60px;
-  margin-top: 300px;
-  background-color: transparent;
+.blogHeader {
+  background-image: url(../assets/blog-header-1.jpg);
 }
 
 .aboutSidebar {
@@ -270,7 +261,6 @@ html {
   float: left;
   margin-top: 50px;
   position: relative;
-  left: 50px;
   background-color: white;
   padding: 20px;
 }
@@ -280,9 +270,9 @@ html {
   background-size: cover;
   background-position: center;
   height: 300px;
-  width: 120%;
+  width: 170%;
   position: relative;
-  right: 25%;
+  right: 70%;
 }
 
 .aboutSidebar p {
@@ -311,26 +301,26 @@ html {
   width: 60%;
 }
 
+.blogImage {
+  position: relative;
+  left: 24px;
+  top: -250px;
+}
+
+.blogImage img {
+  width: 800px;
+  height: 500px;
+  -webkit-box-shadow: #F8E71C -15px 15px;
+          box-shadow: #F8E71C -15px 15px;
+}
+
 .blogText {
   border: #F8E71C 4px solid;
+  border-right: none;
   position: relative;
   bottom: 250px;
   left: 10px;
   padding: 25px;
-}
-
-.blogImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%;
-  height: 500px;
-  -webkit-box-shadow: #F8E71C -15px 15px;
-          box-shadow: #F8E71C -15px 15px;
-  overflow: hidden;
-  position: relative;
-  left: 25px;
-  top: -250px;
 }
 
 .comments {
@@ -356,6 +346,12 @@ html {
   height: 250px;
 }
 
+.submitComment form input {
+  width: 48%;
+  padding: 10px;
+  border-bottom: #0E902D 3px solid;
+}
+
 .userInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,22 +362,88 @@ html {
   margin: 20px 0;
 }
 
-.submitComment form input {
-  width: 48%;
+#contactComment {
   padding: 10px;
-  border-bottom: green 3px solid;
+}
+
+#blogSubmitButton, #contactSubmitButton {
+  color: white;
+  margin-top: 20px;
+}
+
+* {
+  border: 1px red solid;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-header-1.jpg);
+}
+
+.contentBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactSubmitComment {
+  width: 55%;
+  height: 350px;
+  position: relative;
+  bottom: 100px;
+  -webkit-box-shadow: #F8E71C -15px 15px;
+          box-shadow: #F8E71C -15px 15px;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+
+.contactInfo {
+  width: 30%;
+  display: inline-block;
+}
+
+.contactInfo i {
+  font-size: 2rem;
+  color: #0E902D;
+  margin-right: 15px;
+}
+
+.contactInfo h2 {
+  font-size: 2.5rem;
+}
+
+.contactInfo p {
+  margin: 0;
 }
 
 html {
   background-color: #F0EFED;
-}
-
-* {
   font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
   overflow-x: hidden;
+}
+
+#blogComment, #contactComment {
+  border: #0E902D solid 3px;
+  max-width: 100%;
 }
 
 button {
@@ -408,6 +470,15 @@ button {
   font-size: 1.7rem;
 }
 
+h1 {
+  color: #F8E71C;
+  text-align: left;
+  margin-left: 60px;
+  margin-top: 300px;
+  background-color: transparent;
+  width: 30%;
+}
+
 h2 {
   font-size: 3rem;
 }
@@ -430,6 +501,11 @@ html {
   display: -ms-flexbox;
   display: flex;
   background-color: black;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 60px;
 }
 
 p {
@@ -451,18 +527,13 @@ header {
   background-image: url(../assets/home-image-1.jpg);
 }
 
-.indexNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-left: 100px;
-  padding-top: 10px;
-}
-
 .logo {
   color: white;
   font-size: 2.5rem;
+}
+
+#indexNav {
+  background-color: transparent;
 }
 
 nav {
@@ -508,11 +579,11 @@ h1 {
   margin-top: 200px;
 }
 
-.plantedText {
+.h1 {
   color: white;
 }
 
-.invitationText {
+.h1Highlight {
   color: yellow;
 }
 
@@ -561,6 +632,12 @@ h1 {
   top: -40px;
 }
 
+.rightImage img {
+  float: right;
+  top: 40px;
+  left: -15px;
+}
+
 .workshop {
   padding-left: 85px;
   padding-top: 80px;
@@ -569,12 +646,6 @@ h1 {
 .discover {
   padding-right: 85px;
   text-align: right;
-}
-
-.rightImage img {
-  float: right;
-  top: 40px;
-  left: -15px;
 }
 
 .greenhousesEtc {

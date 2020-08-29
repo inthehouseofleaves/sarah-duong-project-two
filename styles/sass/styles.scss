@@ -1,36 +1,29 @@
 
 @import "setup";
 @import "blog";
-// @import "contact";
+@import "contact";
 @import "universal";
-
-
 
 // MAIN PAGE (INDEX)
 
-// HEADER SECTION
+// HEADER
 
 header {
     height: 570px;
 }
 
-    // HEADER
-
     .indexHeader {
         background-image: url(../assets/home-image-1.jpg);
     }
-
-        .indexNav {
-            display: flex;
-            width: 100%;
-            margin-left: 100px;
-            padding-top: 10px;
-        }
 
             .logo {
                 color: white;
                 font-size: 2.5rem;
             }    
+
+            #indexNav {
+                background-color: transparent;
+            }
 
             nav {
                 display: flex;
@@ -74,29 +67,25 @@ header {
             margin-top: 200px;
         }
 
-            .plantedText {
+            .h1 {
                 color: white;
             }
 
-            .invitationText {
+            .h1Highlight {
                 color: yellow;
             }
 
     // HEADER IMAGE BOX
 
-    .headerBox {
-
-        img {
-            right: 0;
-            position: absolute;
-            width: 550px;
-            height: 550px;
-            font-family: 'Josefin Sans', sans-serif;
-            top: 100px;
-            z-index: 0;
-        }
-    }
-
+    .headerBox img {
+        right: 0;
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        font-family: 'Josefin Sans', sans-serif;
+        top: 100px;
+        z-index: 0;
+}
 
 // MAIN
 
@@ -134,28 +123,24 @@ header {
                 box-shadow: #F8E71C 15px 15px;
             }
 
-        // CHECKERED TOP
+            .leftImage img {
+                    top: -40px;
+                }
 
-        .leftImage img {
-                top: -40px;
-            }
+            .rightImage img {
+            float: right;
+            top: 40px;
+            left: -15px;
+        }
 
         .workshop {
             padding-left: 85px;
             padding-top: 80px;
         }
 
-        // CHECKERED BOTTOM
-
         .discover {
             padding-right: 85px;
             text-align: right;
-        }
-
-        .rightImage img {
-            float: right;
-            top: 40px;
-            left: -15px;
         }
 
     // GREENHOUSES ETC.

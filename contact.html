@@ -7,31 +7,33 @@
 
     <link rel="stylesheet" href="./styles/styles.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/d3aeb63855.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
-    <!-- CONTACT PAGE -->
-
     <!-- HEADER -->
 
-    <header>
+    <header class="contactHeader">
     
-        <!-- Use background image here -->
+        <div class="navigationBar">
     
-        <div class="logo">Get in Touch</div>
+            <div class="logo">Planted</div>
     
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
     
-        <h1 class="contactH1">Blog</h1>
+        </div>
+    
+        <h1>Get in Touch</h1>
     
     </header>
 
@@ -39,28 +41,48 @@
 
     <main>
 
-        <form action="">
-            <input type="name" placeholder="Name">
-            <input type="email" placeholder="E-mail address">
-            <textarea name="comment" id="contactPageComment" cols="30" rows="10" placeholder="Comment"></textarea>
-            <button type="submit">Submit</button>
+        <div class="contentBody wrapper">
 
-        </form>
+            <!-- CONTACT US SUBMIT FORM -->
 
-        <!-- CONTACT INFO, SOCIALS, ETC. -->
+            <div class="submitComment" id="contactSubmitComment">
+                    
+                <form action="">
+            
+                    <div class="userInfo">
+                        <input type="name" placeholder="Name">
+                        <input type="email" placeholder="E-mail address">
+                    </div>
+                    
+                    <textarea name="comment" id="contactComment" cols="30" rows="10" placeholder="Message"></textarea>
 
-        <div class="contactInfo">
 
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
+                    <div class="submitButton"></div>
+                        <button type="submit" id="contactSubmitButton">Submit</button>
+                    </div>
 
-            <h2>info@email.com</h2>
-            <p>123-456-789</p>
-            <p>483 Queen St. W, Third Floor</p>
-            <p>Toronto, Ontario</p>
-            <p>M5V 2A9</p>
+                </form>
+
+            <!-- CONTACT INFO, SOCIALS, ETC. -->
+            
+            <div class="contactInfo">
+            
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+            
+                <h2>info@email.com</h2>
+                <p>123-456-789</p>
+                <p>483 Queen St. W, Third Floor</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V 2A9</p>
+            
+            </div>
+            
+        </div>
+
+            
 
         </div>
 
