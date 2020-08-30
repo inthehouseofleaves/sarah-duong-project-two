@@ -1,0 +1,43 @@
+// CONTACT MEDIA QUERIES
+
+// TABLET 
+
+@media (max-width: 878px){
+
+// HEADER
+
+    .contactHeader h1 {
+        margin-top: 0;
+    }
+
+#contactNav h1{
+        position: absolute;
+    }
+
+// HEADER
+
+.contentBody {
+    display: block;
+}
+
+    #contactSubmitComment {
+        width: 100%;
+        display: block;
+    }
+
+    .contactInfo {
+        display: none;
+    }
+
+    #contactSubmitComment {
+        position: static;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+}

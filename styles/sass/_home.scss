@@ -1,0 +1,205 @@
+// MAIN PAGE (INDEX)
+
+// HEADER
+
+header {
+    height: 570px;
+}
+
+    .indexHeader {
+        background-image: url(../assets/home-image-1.jpg);
+    }
+
+            .logo {
+                color: white;
+                font-size: 2.5rem;
+            }
+
+            .hamburgerMenu {
+                display: none;
+            }
+
+            nav {
+                display: flex;
+                text-transform: uppercase;
+                width: 70%;
+                align-items: center;
+            }
+
+                ul {
+                        list-style-type: none;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    li {
+                        display: inline;
+                    }
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            margin: 0 20px;
+                            font-size: 1.5rem;
+                            
+                        }
+
+                        a:hover, .fas:hover {
+                            color: #F8E71C;
+                        }
+
+    // H1
+
+    .indexH1 {
+        text-align: left;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 100%;
+        margin-left: 60px;
+    }
+
+        .indexH1 h1 {
+            margin: 0 auto;
+        }
+
+        .neutral {
+            color: white;
+        }
+
+    // HEADER IMAGE BOX
+
+    .headerBox img {
+        right: 0;
+        position: absolute;
+        width: 550px;
+        height: 550px;
+        font-family: 'Josefin Sans', sans-serif;
+        top: 100px;
+        z-index: 0;
+}
+
+// MAIN
+
+    // WHAT IS PLANTED
+
+    .whatIsPlanted {
+        height: 570px;
+        text-align: center;
+        padding-top: 175px;
+        background-color: #F0EFEF;
+    }
+
+        .whatIsPlanted p {
+            font-size: 2rem;
+            padding: 0 100px;
+        }
+
+    // CHECKERED BOX
+
+    .checkeredBox {
+        height: auto;
+        background-color: white;
+    }
+
+        .discover, 
+        .leftImage, 
+        .rightImage, 
+        .workshop {
+                position: relative;
+                width: 50%;
+                float: left;
+                height: 300px;
+                background-color: white;
+            }
+
+            .leftImage img, .rightImage img {
+                position: relative;
+                width: 450px;
+                box-shadow: #F8E71C 15px 15px;
+            }
+
+            .leftImage img {
+                    top: -40px;
+                    z-index: 1;
+                }
+
+            .rightImage img {
+            float: right;
+            top: 40px;
+            left: -15px;
+        }
+
+        .workshop {
+            padding-left: 85px;
+            padding-top: 80px;
+        }
+
+        .discover {
+            padding-right: 85px;
+            text-align: right;
+        }
+
+    // GREENHOUSES ETC.
+
+    .greenhousesEtc {
+        height: 450px;
+        background-color: #F0EFEF;
+        display: flex;
+        padding-top: 100px;
+    }
+
+        .greenhousesEtc i{
+            font-size: 2rem;
+            background-color: #F8E71C;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 15px;
+        }
+
+        .greenhousesEtc p {
+            margin-left: 55px;
+        }
+
+    // BANNER
+
+    .banner {
+        display: flex;
+        height: 300px;
+    }
+
+    // PLANTED FOUNDER
+
+    .founder {
+        height: 400px;
+        display: flex;
+        padding: 70px 0;
+        background-color: #F0EFEF;
+    }
+
+        .founder img {
+            width: 200px;
+            margin-right: 50px;
+            box-shadow: #F8E71C 15px 15px;
+        }
+
+        .founder p {
+            width: 100%;
+        }
+
+    // GALLERY
+
+    .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+        background-color: white;
+    }
+
+        .gallery img {
+            padding-right: 20px;
+        }
+
+        .gallery img:last-child {
+            padding-right: 0;
+        }
