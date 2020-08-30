@@ -466,10 +466,6 @@ header {
   font-size: 2.5rem;
 }
 
-.hamburgerMenu {
-  display: none;
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,6 +782,9 @@ a:hover, .fas:hover {
 }
 
 @media (max-width: 500px) {
+  .indexH1 h1 {
+    top: -530px;
+  }
   .founder {
     display: block;
     text-align: center;
@@ -963,6 +962,9 @@ p {
 }
 
 @media (max-width: 878px) {
+  h1 {
+    width: 100%;
+  }
   h2,
   h3,
   h4 {
@@ -994,9 +996,12 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #F8E71C;
     width: 100%;
+    position: relative;
+    top: -50px;
+    margin-left: -10px;
   }
   .socials i {
     padding: 5px 20px;
@@ -1012,9 +1017,15 @@ p {
   }
   h1 {
     font-size: 6rem;
+    text-align: right;
+    position: relative;
+    top: -260px;
   }
   h2,
   h3 {
     font-size: 3.2rem;
+  }
+  .socials {
+    top: -200px;
   }
 }

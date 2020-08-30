@@ -169,6 +169,10 @@ header {
 // MEDIA QUERY (MAX-WIDTH: 500PX)
 
 @media (max-width: 500px) {
+
+    .indexH1 h1{
+        top: -530px;
+    }
  
     .founder {
         display: block;
