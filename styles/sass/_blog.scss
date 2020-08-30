@@ -1,5 +1,6 @@
 // MISC
 
+
 .comment1 a, .comment2 a, .blogText a, .aboutSidebar a{
     color: #074115;
     margin-left: 0;
@@ -26,7 +27,7 @@
         width: 33%;
         float: left;
         margin-top: 50px;
-        position: relative;
+        // position: static;
         background-color: white;
         padding: 20px;
     }
@@ -107,19 +108,19 @@
             height: 250px;
         }
 
-            .submitComment form input{
-                    width: 48%;
-                    padding: 10px;
-                    border-bottom: #0E902D 3px solid;
-                }
-
         .userInfo {
             display: flex;
             justify-content: space-between;
             margin: 20px 0;
         }
+
+            .userInfo input{
+                width: 48%;
+                padding: 10px;
+                border-bottom: #0E902D 3px solid;
+            }
         
-        #contactComment {
+        .submitComment textarea {
             padding: 10px;
         }
 
@@ -127,7 +128,6 @@
             color: white;
             margin-top: 20px;
         }
-
                 
 
 

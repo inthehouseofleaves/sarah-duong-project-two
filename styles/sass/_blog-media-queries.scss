@@ -1,0 +1,62 @@
+// TABLET/PHONE
+
+@media (max-width: 878px) {
+
+// HEADER
+
+header {
+    height: auto;
+}
+
+    // H1
+
+    .blogH1 {
+        margin: 0;
+    }
+
+// MAIN
+
+    .blogImage,
+    .blogText,
+    .comments {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .aboutSidebar {
+        display: block;
+        width: 100%;
+    }
+
+    // COMMENTS
+
+    .comments {
+        padding: 30px;
+        height: auto;
+    }
+
+        .submitComment {
+            margin: 40px 0 60px 0;
+        }
+
+            .submitComment form {
+                height: auto;
+            }
+
+            .userInfo {
+                display: block;
+            }
+
+                .userInfo input {
+                    height: 50px;
+                    width: 100%;
+                    border-bottom: #0E902D 3px solid;
+                    margin-bottom: 10px;
+                }
+
+            .submitComment textarea {
+                padding: 10px;
+            }
+
+}
