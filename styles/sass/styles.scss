@@ -1,8 +1,8 @@
-
 @import "setup";
 @import "blog";
 @import "contact";
 @import "universal";
+@import "home-media-queries"
 
 // MAIN PAGE (INDEX)
 
@@ -19,7 +19,11 @@ header {
             .logo {
                 color: white;
                 font-size: 2.5rem;
-            }    
+            }
+
+            .hamburgerMenu {
+                display: none;
+            }
 
             #indexNav {
                 background-color: transparent;
@@ -50,19 +54,14 @@ header {
                             
                         }
 
-                        a:hover {
+                        a:hover, .fas:hover {
                             color: #F8E71C;
                         }
 
     // H1
 
-    * {
-        border: red solid 1px;
-    }
-
     .indexH1 {
         text-align: left;
-        border: 2px blue solid;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,7 +69,7 @@ header {
     }
 
         .indexH1 h1 {
-            margin-top: 0;
+            margin: 0 auto;
         }
 
         .neutral {
@@ -108,15 +107,19 @@ header {
     // CHECKERED BOX
 
     .checkeredBox {
-        height: 600px;
+        height: auto;
         background-color: white;
     }
 
-        .discover, .leftImage, .rightImage, .workshop {
+        .discover, 
+        .leftImage, 
+        .rightImage, 
+        .workshop {
                 position: relative;
                 width: 50%;
                 float: left;
                 height: 300px;
+                background-color: white;
             }
 
             .leftImage img, .rightImage img {
@@ -127,6 +130,7 @@ header {
 
             .leftImage img {
                     top: -40px;
+                    z-index: 1;
                 }
 
             .rightImage img {
@@ -156,7 +160,7 @@ header {
 
         .greenhousesEtc i{
             font-size: 2rem;
-            background-color: yellow;
+            background-color: #F8E71C;
             border-radius: 50%;
             padding: 10px;
             margin-right: 15px;
@@ -208,3 +212,195 @@ header {
         .gallery img:last-child {
             padding-right: 0;
         }
+
+// // INDEX MEDIA QUERY: TABLET (MAX-WIDTH: 878PX)
+
+// @media (max-width: 878px) {
+
+// // HEADER
+
+// header {
+//     padding: 20px;
+// }
+
+//     // NAV BAR
+
+//     .navigationBar {
+//         height: auto;
+//         display: flex;
+//         padding-left: 0;
+//         justify-content: space-between;
+//         align-items: flex-start;
+//     }
+
+//         .navigationBar a, .logo {
+//                 font-size: 4.5rem;
+//         }
+
+//         .hamburgerMenu {
+//             // visibility: hidden;
+//             display: inline-flex;
+//             font-size: 7rem;
+//             color: white;
+//             right: 20px;
+//             position: absolute;
+//             float: right;
+//         }
+
+//         .hamburgerMenu:hover {
+//             z-index: 0;
+//         }
+
+//         .navigationBar nav {
+//             visibility: hidden;
+//             width: 100%;
+//         }
+
+//             .navigationBar ul {
+//                 display: flex;
+//                 flex-direction: column;
+//                 height: 100%;
+//                 padding: 20px;
+//                 text-align: right;
+//                 // width: 50%;
+//             }
+
+//                 .navigationBar a {
+//                     margin: 0;
+//                 }
+
+//         .headerBox {
+//             visibility: hidden;
+//         }
+
+//     // H1
+
+//     h1 {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: left;
+//         font-size: 8rem;
+//         width: 100%;
+//     }
+
+//     .indexH1 {
+//         margin-top: -100px;
+//     }
+
+// // MAIN
+
+//     // WHAT IS PLANTED
+
+//     .whatIsPlanted {
+//         height: auto;
+//         padding: 50px 40px;
+//     }
+
+//         .whatIsPlanted p {
+//             padding: 0;
+//         }
+
+//     // CHECKERED
+
+//     .checkeredBox {
+//         display: block;
+//     }
+
+//     .discover,
+//     .leftImage, 
+//     .rightImage, 
+//     .workshop {
+//         display: block;
+//         width: 100%;
+//         text-align: left;
+//         padding: 40px;
+//         height: auto;
+//     }
+
+//         .leftImage, .rightImage {
+//             background-size: cover;
+//             background-position: center;
+//         }
+
+//         .leftImage {
+//             background-image: url(../assets/left-flowers.jpg);
+//         };
+
+//         .rightImage {
+//             display: none;
+//         };
+
+//         .leftImage img, .rightImage img {
+//             visibility: hidden;
+//         }
+
+//     // DISCOVER
+
+//     .whatIsPlanted,
+//     .discover,
+//     .workshop {
+//         border: #F8E71C solid 5px;
+//     }
+
+//     .discover {
+//         border-top: 0;
+//         margin-bottom: 70px;
+//         padding-top: 0;
+//     }
+
+//     .workshop {
+//         border-bottom: 0;
+//     }
+
+//     // GREENHOUSES
+
+//     .greenhousesEtc {
+//         display: block;
+//         height: 100%;
+//         padding: 40px;
+//         margin-bottom: 30px;
+//     }
+
+//         .greenhousesEtc h3:nth-child(2n+1) {
+//             margin-top: 40px;
+//         }
+
+//         .greenhousesEtc p {
+//             margin: 0;
+//         }
+
+//     // FOUNDER
+
+//     .founder {
+//         height: auto;
+//     }
+
+//     // GALLERY {
+    
+//     .gallery {
+//         border: #F8E71C solid 5px;
+//         display: block;
+//         text-align: center;
+//     }
+
+//         .gallery img {
+//             padding: 20px 0;
+//             width: 100%;
+//         }
+
+// }
+
+// // MEDIA QUERY (MAX-WIDTH: 500PX)
+
+// @media (max-width: 500px) {
+ 
+//     .founder {
+//         display: block;
+//         text-align: center;
+//     }
+
+//         .founder img {
+//             margin-bottom: 30px;
+//         }
+
+// }

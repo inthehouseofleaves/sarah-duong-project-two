@@ -1,5 +1,6 @@
-// font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Roboto', sans-serif;
+// UNIVERSAL STYLES
+
+// DESKTOP
 
 html {
     background-color: #F0EFED;
@@ -84,5 +85,29 @@ p {
     margin: 0 auto;
     width: 90%;
     max-width: 1080px;
+}
+
+// TABLET
+
+@media (max-width: 878px) {
+
+    h2, h3, h4 {
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+}
+
+// PHONE
+
+@media (max-width: 500px) {
+
+    h3 {
+        font-size: 3.2rem;
+    }
+
 }
 
