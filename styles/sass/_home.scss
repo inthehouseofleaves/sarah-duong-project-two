@@ -23,10 +23,10 @@ header {
             }
 
                 ul {
-                        list-style-type: none;
-                        margin: 0;
-                        width: 100%;
-                    }
+                    list-style-type: none;
+                    margin: 0;
+                    width: 100%;
+                }
 
                     li {
                         display: inline;
@@ -102,12 +102,12 @@ header {
         .leftImage, 
         .rightImage, 
         .workshop {
-                position: relative;
-                width: 50%;
-                float: left;
-                height: 300px;
-                background-color: white;
-            }
+            position: relative;
+            width: 50%;
+            float: left;
+            height: 300px;
+            background-color: white;
+        }
 
             .leftImage img, .rightImage img {
                 position: relative;
@@ -121,10 +121,10 @@ header {
                 }
 
             .rightImage img {
-            float: right;
-            top: 40px;
-            left: -15px;
-        }
+                float: right;
+                top: 40px;
+                left: -15px;
+            }
 
         .workshop {
             padding-left: 85px;

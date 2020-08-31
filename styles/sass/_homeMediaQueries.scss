@@ -22,7 +22,6 @@ header {
         }
 
         .hamburgerMenu {
-            // visibility: hidden;
             display: inline-flex;
             font-size: 7rem;
             color: white;
@@ -31,27 +30,9 @@ header {
             float: right;
         }
 
-        .hamburgerMenu:hover {
-            z-index: 0;
-        }
-
-        .navigationBar nav {
-            visibility: hidden;
-            width: 100%;
-        }
-
-            .navigationBar ul {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                padding: 20px;
-                text-align: right;
-                // width: 50%;
+            .navigationBar nav {
+                visibility: hidden;
             }
-
-                .navigationBar a {
-                    margin: 0;
-                }
 
         .headerBox {
             visibility: hidden;
@@ -171,7 +152,7 @@ header {
 @media (max-width: 500px) {
 
     .indexH1 h1{
-        top: -530px;
+        top: -490px;
     }
  
     .founder {

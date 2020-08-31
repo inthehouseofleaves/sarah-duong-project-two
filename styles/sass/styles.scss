@@ -1,7 +1,7 @@
 @import "setup";
+@import "home";
 @import "blog";
 @import "contact";
-@import "home";
 @import "homeMediaQueries";
 @import "blogMediaQueries";
 @import "contactMediaQueries";
@@ -23,6 +23,16 @@ body {
     border: #0E902D solid 3px;
     max-width: 100%;
 }
+
+.blogHeader, .contactHeader {
+    background-position: center;
+    background-size: cover;
+}
+
+#blogSubmitButton, #contactSubmitButton {
+            color: white;
+            margin-top: 20px;
+        }
 
 button {
     background-color: #0E9020;
@@ -93,10 +103,6 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-.socials {
-    display: none;
-}
-
 .wrapper {
     margin: 0 auto;
     width: 90%;
@@ -117,10 +123,6 @@ p {
         margin: 20px 0;
     }
 
-    * {
-        // border: blue 2px solid;
-    }
-
     h3 {
         font-size: 4rem;
     }
@@ -133,7 +135,6 @@ p {
     .navigationBar {
         background-color: transparent;
         display: flex;
-        // flex-wrap: wrap;
         align-items: flex-start;
         height: 100%;
         padding: 0;
@@ -163,10 +164,6 @@ p {
 // PHONE (MAX-WIDTH: 500PX)
 
 @media (max-width: 500px) {
-
-    * {
-        // border: red 1px solid;
-    }
 
     header {
         height: 100vh;
